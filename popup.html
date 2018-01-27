@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src='jquery-1.11.3.min.js'></script>
+		<style>
+			body {
+				text-align: center;
+				vertical-align: middle;
+			}
+			h1.hdline {
+				height: 40px;
+				width: 400px;	
+			}
+			div {
+				padding:10px;
+	    		margin:10px;
+			}
+			div.f_footer {
+				font-family: '돋움',dotum,appleGothic,sans-serif;
+				font-size: 12px;
+			}
+			div.text-muted {
+				height: 1px;
+			}
+			
+			ul{
+				padding-right: 40px;
+			}
+			table{
+				width: 100%;
+				padding: 3px;
+				border-collapse:collapse;
+			}
+			tr{
+				border-bottom: 1px solid #CFCFCF;
+				height: 40px;
+			}
+			td{
+				height : 25px;
+				text-align: left;
+				vertical-align: middle;
+			}
+			td.buttonsTd{
+				text-align: right;
+			}
+			td.myTd{
+				cursor:pointer;
+				width: 65%;
+				vertical-align: middle;
+			}
+			label.tempName{
+				cursor:pointer;
+				margin:0px;
+			}
+			button{
+				cursor:pointer;	
+				margin:2px;
+			}
+    	</style>
+    	<script src="popup.js"> </script>
+	</head>
+	
+	<body>
+		<h1 class="hdline">E.JIRA</h1>
+		<div>
+			Template Name:
+			<input type="text" id="nameInputArea">
+			<button id="addBtn" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+		</div>
+		<div id="systemMessageArea" class="text-muted">
+		</div>
+		<div id="templateDiv"> 
+			<ul id="myUl">
+				<table id="myTable"></table>
+			</ul>
+		</div>
+		<div id="footer" class="f_footer">
+			<span> Copyright 2015. Youngpil Yun.  All Rights Reserved.</span>
+		</div>
+	</body>
+</html>
