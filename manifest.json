@@ -1,15 +1,15 @@
 {
 	  "manifest_version": 2,
-	
+
 	  "name": "E.JIRA",
 	  "description": "This extension is utility program for Jira BTS. Press Ctrl+Shift+E to open E.JIRA",
-	  "version": "1.0.0",
-  
-	  "browser_action": {	
+	  "version": "1.0.1",
+
+	  "browser_action": {
 		    "default_icon": "icon.png",
 		    "default_popup": "popup.html"
 	  },
-  
+
 	  "commands": {
 		    "toggle-feature": {
 			      "suggested_key": { "default": "Ctrl+Shift+Y" },
@@ -23,13 +23,13 @@
 			      }
 		    }
 	  },
-  
+
 	"content_scripts": [
 		{
 			"matches": ["<all_urls>"],
 			"js": ["jquery-1.11.3.min.js"]
 		}
 	],
-  
+
 	"permissions": [ "activeTab", "storage" ]
 }
